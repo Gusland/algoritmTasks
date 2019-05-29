@@ -12,10 +12,13 @@
     <link rel="stylesheet" href="">
   </head>
   <body>
-    <h1> Простые и не очень задачи на js </h1>
-    <ol>
-      <li> <a href="./html/isPrime.html" target="_blank"> Является ли заданное число простым?  </a> </li>
-      <li> <a href="./html/factorial.html" target="_blank"> Факториал числа  </a> </li>
-    </ol>
+      <h1> <a href="../scripts/factorial.js" target="_blank"> Ссылка на js. </a> Также можно посмотреть в консоли. </h1>
+      <code> const factorial = num => {
+          for(let i = 2; i < num; i++)
+            if(num % i === 0) return false;
+          return num > 1;
+        }
+      </code>
+      <script src="../scripts/factorial.js" async defer></script>
   </body>
 </html>
